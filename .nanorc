@@ -1,0 +1,14 @@
+# line numbers
+set const
+
+# syntax coloring
+include /usr/local/Cellar/nano/2.7.0/share/nano/html.nanorc
+include /usr/local/Cellar/nano/2.7.0/share/nano/sh.nanorc
+include /usr/local/Cellar/nano/2.7.0/share/nano/php.nanorc
+include /usr/local/Cellar/nano/2.7.0/share/nano/perl.nanorc
+include /usr/local/Cellar/nano/2.7.0/share/nano/xml.nanorc
+include /usr/local/Cellar/nano/2.7.0/share/nano/ruby.nanorc
+include /usr/local/Cellar/nano/2.7.0/share/nano/java.nanorc
+include /usr/local/Cellar/nano/2.7.0/share/nano/css.nanorc
+include /usr/local/Cellar/nano/2.7.0/share/nano/javascript.nanorc
+

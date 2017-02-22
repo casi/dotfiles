@@ -4,7 +4,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home
 export PATH=/usr/local/bin:$PATH
-export RUBY_HOME=/Users/carsten/.rvm/rubies/ruby-2.3.1/bin
+export RUBY_HOME=/Users/carsten/.rvm/rubies/ruby-2.3.3/bin
 
 # my multi-line prompt
 PS1='\u@\h: $PWD

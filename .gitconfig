@@ -1,3 +1,10 @@
 [user]
 	name = Carsten Behnert
 	email = c.behnert@gmx.de
+
+[color]
+	ui = auto
+
+[core]
+	editor = nano
+

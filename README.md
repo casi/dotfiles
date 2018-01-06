@@ -30,3 +30,5 @@ $ source ~/.bashrc
 ~$ yadm clone git@github.com:casi/dotfiles
 ~$ source ~/.bashrc
 ```
+
+[yadm]: https://github.com/TheLocehiliosan/yadm

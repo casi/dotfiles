@@ -1,6 +1,6 @@
 # dotfiles
 
-My yadm managed configuration/dot files.
+My [yadm][yadm] managed configuration/dot files.
 
 ## Motivation
 Just to have a tool that helps maintain a single repository of all my dotfiles, while keeping them in the `$HOME`- directory.

@@ -17,7 +17,7 @@ fi
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home
 export PATH=/usr/local/bin:$PATH
 export RUBY_HOME=/Users/carsten/.rvm/rubies/ruby-2.4.2/bin
 export PATH="$PATH:`yarn global bin`"

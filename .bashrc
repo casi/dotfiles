@@ -23,10 +23,6 @@ export RUBY_HOME=/Users/carsten/.rvm/rubies/ruby-2.4.2/bin
 export PATH="$PATH:`yarn global bin`"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # my multi-line prompt
 PS1='\u@\h: $PWD
 \$ '
@@ -35,3 +31,6 @@ PS1='\u@\h: $PWD
 #[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" 
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+#load ruby environment
+eval "$(rbenv init -)"

@@ -22,6 +22,7 @@ export PATH=/usr/local/bin:$PATH
 export RUBY_HOME=/Users/carsten/.rvm/rubies/ruby-2.4.2/bin
 export PATH="$PATH:`yarn global bin`"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="/usr/local/opt/curl/bin:$PATH"
 
 # my multi-line prompt
 PS1='\u@\h: $PWD

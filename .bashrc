@@ -17,12 +17,13 @@ fi
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
 export PATH=/usr/local/bin:$PATH
-export RUBY_HOME=~/.rbenv/versions/2.5.0/bin
+export RUBY_HOME=~/.rbenv/versions/2.5.1/bin
 export PATH="$PATH:`yarn global bin`"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH="/Users/carsten/Projekte/webdriver:$PATH" # <= for selenium webdriver
 
 # my multi-line prompt
 PS1='\u@\h: $PWD
@@ -33,5 +34,5 @@ PS1='\u@\h: $PWD
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
-#load ruby environment
+# load ruby environment
 eval "$(rbenv init -)"

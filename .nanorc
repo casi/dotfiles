@@ -1,21 +1,29 @@
 # line numbers
-set const
+set linenumbers
+
+# set smooth scrolling
+set smooth
+
+# more space under titlebar
+set morespace
 
 # syntax coloring
-include /usr/local/Cellar/nano/2.9.2/share/nano/conf.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/css.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/Dockerfile.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/git.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/html.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/java.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/javascript.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/json.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/markdown.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/nginx.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/perl.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/php.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/ruby.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/sh.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/sql.nanorc
-include /usr/local/Cellar/nano/2.9.2/share/nano/xml.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/conf.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/css.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/Dockerfile.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/git.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/html.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/java.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/javascript.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/json.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/man.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/markdown.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/nanorc.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/nginx.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/perl.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/php.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/ruby.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/sh.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/sql.nanorc
+include /usr/local/Cellar/nano/2.9.5/share/nano/xml.nanorc
 

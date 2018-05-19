@@ -20,6 +20,9 @@ alias grepp='grep -P --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# delete all .DS_Store files from the file system
+alias delds='find ./ -iname .DS_Store -delete'
+
 # Edit hosts file via nano
 alias hosts='nano /etc/hosts'
 

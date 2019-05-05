@@ -19,9 +19,10 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
 export PATH=/usr/local/bin:$PATH
-export RUBY_HOME=~/.rbenv/versions/2.5.1/bin
+export RUBY_HOME=~/.rbenv/versions/2.6.3/bin
 export NODE_PATH='/usr/local/lib/node_modules'
 # export PATH="$PATH:`yarn global bin`"
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH="/Users/carsten/Projekte/webdriver:$PATH" # <= for selenium webdriver
@@ -37,3 +38,7 @@ PS1='\u@\h: $PWD
 
 # load ruby environment
 eval "$(rbenv init -)"
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[ -f /usr/local/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash ] && . /usr/local/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash

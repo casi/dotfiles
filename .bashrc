@@ -20,7 +20,8 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
 export PATH=$HOME/.cargo/bin:/usr/local/opt:/usr/local/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/lib
-export RUBY_HOME=~/.rbenv/versions/2.6.5/bin
+export RUBY_HOME=~/.rbenv/versions/2.6.6/bin
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export NODE_PATH='/usr/local/lib/node_modules'
 export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"

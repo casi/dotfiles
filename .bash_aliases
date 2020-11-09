@@ -24,7 +24,7 @@ alias egrep='egrep --color=auto'
 alias delds='find ./ -iname .DS_Store -delete'
 
 # Edit hosts file via nano
-alias hosts='nano /etc/hosts'
+alias hosts='vim /etc/hosts'
 
 # Print disk usage human readable
 alias d='du -sh'
@@ -54,3 +54,4 @@ alias drm='docker rm'
 alias dcompstop='docker-compose stop'
 alias dcompup='docker-compose up -d'
 alias dcomprm='docker-compose rm --all'
+

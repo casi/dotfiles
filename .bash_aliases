@@ -42,6 +42,9 @@ alias sshlist='echo Currently open ssh connections && echo && l ~/.ssh/multiplex
 # Limits ping to five ECHO_REQUEST packets
 alias ping='ping -c 5'
 
+# Start redis server NOT as background service
+alias redis='redis-server /usr/local/etc/redis.conf'
+
 # Docker stuff
 # Clean stopped containers
 alias cco="docker ps -a | grep \"Exited\" | awk '{print $1}' | xargs docker rm"

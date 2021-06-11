@@ -5,6 +5,7 @@ if [ "$system_type" == "Darwin" ]; then
   alias bup='brew update && brew upgrade'
   # all installed bottles
   alias brewl='brew leaves'
+  alias media2html='ruby ~/Projekte/Ruby/media2html/media2html.rb'
 fi
 
 # Reload bashrc file
@@ -23,7 +24,7 @@ alias egrep='egrep --color=auto'
 # delete all .DS_Store files from the file system
 alias delds='find ./ -iname .DS_Store -delete'
 
-# Edit hosts file via nano
+# Edit hosts file via vim
 alias hosts='vim /etc/hosts'
 
 # Print disk usage human readable

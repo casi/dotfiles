@@ -17,8 +17,8 @@ fi
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
-export RUBY_HOME=/Users/carsten/.rbenv/versions/2.7.2/bin
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
+export RUBY_HOME=/Users/carsten/.rbenv/versions/3.0.1/bin
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export LD_LIBRARY_PATH=/usr/local/lib
 export NODE_PATH='/usr/local/lib/node_modules'
@@ -49,11 +49,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# heroku autocomplete setup
-HEROKU_AC_BASH_SETUP_PATH=/Users/carsten/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
-
 # init bash history tool
-if [ -r /usr/local/opt/mcfly/mcfly.bash ]; then
-  . /usr/local/opt/mcfly/mcfly.bash
-fi
+eval "$(mcfly init bash)"
 

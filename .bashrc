@@ -21,7 +21,7 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home
-export RUBY_HOME=/Users/carsten/.rbenv/versions/$(cat ~/.rbenv/version)/bin
+export RUBY_HOME=~/.rbenv/versions/$(cat ~/.rbenv/version)/bin
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export LD_LIBRARY_PATH=/usr/local/lib
 export NODE_PATH='/usr/local/lib/node_modules'
@@ -29,7 +29,7 @@ export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpcap/bin:$PATH"
 export PATH="/opt/homebrew/opt/python/libexec/bin:$PATH"
-export PATH="/Users/carsten/Projekte/webdriver:$PATH" # <= for selenium webdriver
+export PATH="~/Projekte/webdriver:$PATH" # <= for selenium webdriver
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export PATH=$RUBY_HOME:/usr/local/opt:/usr/local/bin:$PATH
 

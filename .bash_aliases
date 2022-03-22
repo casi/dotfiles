@@ -1,15 +1,56 @@
 system_type=$(uname -s)
 if [ "$system_type" == "Darwin" ]; then
   alias ls='ls -G';
+
   # brew upgrade
-  alias bup='brew update && brew upgrade'
+  alias bup='brew update; brew upgrade'
+  # Get OS X Software Updates, and update Homebrew and their installed packages
+  alias update='sudo softwareupdate -i -a; bup'
+
   # all installed bottles
   alias brewl='brew leaves'
+
+  # delete all .DS_Store files from the file system
+  alias delds='find ./ -iname .DS_Store -delete'
+
+  # Show/hide hidden files in Finder
+  alias show='defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder'
+  alias hide='defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder'
+
+  # Hide/show all desktop icons (useful when presenting)
+  alias hidedesktop='defaults write com.apple.finder CreateDesktop -bool false && killall Finder'
+  alias showdesktop='defaults write com.apple.finder CreateDesktop -bool true && killall Finder'
+
+  # Disable Spotlight
+  alias spotoff='sudo mdutil -a -i off'
+  # Enable Spotlight
+  alias spoton='sudo mdutil -a -i on'
+
+  # my fancy little media visualizing tool ;)
   alias media2html='ruby ~/Projekte/Ruby/media2html/media2html.rb'
+
+  # format a USB stick; to find out N: diskutil list
+  alias formatusb='diskutil eraseDisk FAT32 UNTITLED MBRFormat /dev/diskN'
+
+  # Start redis server NOT as background service
+  alias redis='redis-server /opt/homebrew/etc/redis.conf'
 fi
 
 # Reload bashrc file
 alias bashreload='source ~/.bashrc && echo Bash config reloaded'
+
+# Easier navigation: .., ..., ...., ....., ......
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+# Shortcuts
+alias g="git"
+alias h="history"
+alias j="jobs"
+alias o="open"
+alias oo="open ."
 
 # Directory listings
 alias ll='ls -lah'
@@ -20,9 +61,6 @@ alias grep='grep --color=auto'
 alias grepp='grep -P --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-
-# delete all .DS_Store files from the file system
-alias delds='find ./ -iname .DS_Store -delete'
 
 # Edit hosts file via vim
 alias hosts='vim /etc/hosts'
@@ -43,9 +81,6 @@ alias sshlist='echo Currently open ssh connections && echo && l ~/.ssh/multiplex
 # Limits ping to five ECHO_REQUEST packets
 alias ping='ping -c 5'
 
-# Start redis server NOT as background service
-alias redis='redis-server /usr/local/etc/redis.conf'
-
 # Docker stuff
 # Clean stopped containers
 alias cco="docker ps -a | grep \"Exited\" | awk '{print $1}' | xargs docker rm"
@@ -58,4 +93,8 @@ alias drm='docker rm'
 alias dcompstop='docker-compose stop'
 alias dcompup='docker-compose up -d'
 alias dcomprm='docker-compose rm --all'
+alias drvol='docker system prune --volumes -f'
 
+# dev aliases
+alias be='bundle exec'
+alias rspecd='be rspec --format d'

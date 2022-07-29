@@ -3,7 +3,7 @@ if [ "$system_type" == "Darwin" ]; then
   alias ls='ls -G';
 
   # brew upgrade
-  alias bup='brew update; brew upgrade'
+  alias bup='brew update; brew upgrade; brew upgrade --cask; brew autoremove; brew cleanup'
   # Get OS X Software Updates, and update Homebrew and their installed packages
   alias update='sudo softwareupdate -i -a; bup'
 

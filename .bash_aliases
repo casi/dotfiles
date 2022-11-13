@@ -4,8 +4,10 @@ if [ "$system_type" == "Darwin" ]; then
 
   # brew upgrade
   alias bup='brew update; brew upgrade; brew upgrade --cask; brew autoremove; brew cleanup'
-  # Get OS X Software Updates, and update Homebrew and their installed packages
-  alias update='sudo softwareupdate -i -a; bup'
+  # gem update
+  alias gup='gem update --system; gem update; gem cleanup'
+  # Get macOS Software Updates, update Homebrew and their installed packages and update Ruby Gems and cleanup all
+  alias update='sudo softwareupdate -i -a; bup; gup'
 
   # all installed bottles
   alias brewl='brew leaves'
@@ -34,6 +36,14 @@ if [ "$system_type" == "Darwin" ]; then
 
   # Start redis server NOT as background service
   alias redis='redis-server /opt/homebrew/etc/redis.conf'
+
+  # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
+  alias stfu="osascript -e 'set volume output muted true'"
+  alias pumpitup="osascript -e 'set volume output volume 100'"
+
+  # Lock the screen (when going AFK)
+  #alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+  alias afk='pmset displaysleepnow'
 fi
 
 # Reload bashrc file
@@ -61,6 +71,12 @@ alias grep='grep --color=auto'
 alias grepp='grep -P --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# Get week number
+alias week='date +%V'
 
 # Edit hosts file via vim
 alias hosts='vim /etc/hosts'

@@ -1,0 +1,27 @@
+[user]
+    name = GIT_AUTHOR_NAME
+    mail = GIT_AUTHOR_EMAIL
+
+[credential]
+    helper = osxkeychain
+
+[color]
+    ui = auto
+
+[core]
+    editor = vim
+
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+
+[help]
+    autocorrect = 1
+
+[push]
+    followTags = true
+
+[init]
+    defaultBranch = main
